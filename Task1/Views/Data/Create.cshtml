@@ -1,0 +1,14 @@
+﻿
+<h2>新增頁面</h2>
+
+@using (Html.BeginForm("Access", "Data", new { AccessType = "Create" }, FormMethod.Post))
+{
+    <div class="form-group">
+        <div class="form-group">
+            <label>名字</label>
+            <input for="name" class="form-control" id="Context" name="Context">
+        </div>
+        <button type="submit" class="btn btn-primary">確定</button>
+        <a class="btn btn-info" href="@Url.Action("Index", "Data")">取消</a>
+    </div>
+}
